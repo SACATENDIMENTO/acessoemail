@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acesso Rápido ao Webmail</title>
     <meta name="description" content="Acesso rápido e fácil ao seu webmail. Clique no botão e acesse sua conta de e-mail.">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18229207103"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18229207103');
+    </script>
+
     <style>
         * {
             margin: 0;
@@ -143,7 +153,7 @@
                 <p>🔒 Você será redirecionado para a página oficial de login.</p>
             </div>
 
-            <a href="https://webmailterra.com.br" class="button" target="_blank">
+            <a href="https://webmailterra.com.br" class="button" target="_blank" onclick="gtag('event', 'clique', {'event_category': 'acesso_webmail', 'event_label': 'botao_acessar'});">
                 🔐 Acessar meu Webmail
             </a>
 
